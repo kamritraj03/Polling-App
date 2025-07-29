@@ -54,4 +54,36 @@ Start the React development server (opens http://localhost:3000 in your browser)
 npm start
 
 
+---
+
+
+---
+
+### Simulating Multiple Users & Rooms
+
+To test the real-time features, you can simulate multiple users and rooms using separate incognito browser windows.
+
+#### Scenario 1: Four Users in a Single Room
+
+This tests the core real-time broadcasting to all participants in one room.
+
+1.  Open an **incognito or private window** in four different web browsers (e.g., Chrome, Brave, Edge, Firefox).
+2.  In each incognito window, navigate to `http://localhost:3000`.
+3.  In the first window, have a user (e.g., Alice) create a new room and note the room code.
+4.  In the other three windows, have Bob, Charles, and Daniel join the room using Alice's room code.
+5.  As they vote, you will see the participant list and vote counts update in real-time across all four windows.
+
+#### Scenario 2: Two Separate, Independent Rooms
+
+This tests that rooms are properly isolated from each other.
+
+1.  Using the four incognito windows from the setup above:
+2.  **Room A**: In the first window, have **Alice** create a new room. Note the room code. In the second window, have **Bob** join Alice's room using that code.
+3.  **Room B**: In the third window, have **Charles** create a **different** new room. In the fourth window, have **Daniel** join Charles's room using the new code.
+4.  You will now observe that votes and participant updates in Room A are only visible to Alice and Bob, while Room B remains completely separate for Charles and Daniel. This demonstrates the effectiveness of the channel-based broadcasting logic.
+
+---
+
+
+
 

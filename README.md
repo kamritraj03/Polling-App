@@ -20,8 +20,8 @@ This is real-time polling application built with React, Node.js, Express and pow
 ### Tech Stack
 
 *   **Frontend**: React.js
-*   **Backend**: Node.js with Express.js
-*   **Real-Time Communication**: Socket.IO (a WebSocket library)
+*   **Backend**: Node.js with WebSockets
+
 
 ---
 

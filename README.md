@@ -1,6 +1,6 @@
 # Real-Time Poll Application
 
-This is real-time polling application built with React, Node.js, Express and powered by WebSockets for live communication. Users can create a poll room, share a unique code, and have others join to vote in real-time.
+This is real-time polling application built with React, Node.js powered by WebSockets for live communication. Users can create a poll room, share a unique code, and have others join to vote in real-time.
 
 ---
 

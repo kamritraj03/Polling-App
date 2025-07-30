@@ -10,6 +10,8 @@ function PollRoom({ participants, joinedRoom, votingEnabled, timeLeft, joinNotif
         <h1>Poll Room: {joinedRoom}</h1>
         {votingEnabled && <h2>Your Time Remaining: {timeLeft}s</h2>}
         {joinNotification && <p style={{ color: 'blue', fontStyle: 'italic' }}>{joinNotification}</p>}
+        
+        <h2>What's your favorite animal?</h2>
         <h2>Cats vs. Dogs</h2>
         <button onClick={() => handleVote('cats')} disabled={hasVoted || !votingEnabled} style={{ fontSize: '20px', margin: '10px', padding: '15px' }}>
           🐱 Cats ({votes.cats})
